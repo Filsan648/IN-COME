@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Navbar from './compenents/navbar';
+import Hero from './compenents/hero';
+import About from './compenents/about';
+import Serice from './compenents/service';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+   <div className='font-serif bg-gray-50/60'>
+    <Navbar/>
+     <Hero/>
+      <About/>
+      <Serice/>
+      
+      </div>
   </React.StrictMode>
 );
 
