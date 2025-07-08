@@ -3,22 +3,18 @@ import image from "../assets/IMA.png"
 function About(){
 const handle= ((e)=>{console.log(e)})
     return(
-         <div className="mt-40 ml-4 font-serif mr-4">
-             <h1 onClick={handle} className="text-4xl font-bold text-amber-600 pb-20 font-serif ">
-                About Us
-              </h1>
-        <div className="flex flex-row gap-14 ">
-            <div className="w-1/2">
+         <div className="mt-80 ml-4 font-abril font-sans text-5xl mr-4">
+            
+        <div className=" gap-14  ">
+            <div className="">
             <p>
-           Le ministère de l'Agriculture, de l'Eau, de la Pêche, de l'Élevage et des Ressources
+           <span className=" w-2 "> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   </span> Le ministère de l'Agriculture, de l'Eau, de la Pêche, de l'Élevage et des Ressources
  halieutiques est une institution gouvernementale chargée de la formulation, de la mise en
  œuvre et du suivi des politiques publiques liées à la gestion durable des ressources
- naturelles et alimentaires du pays.<br/> 
+ naturelles et alimentaires du pays. <span className=" w-2 "> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   </span>
             </p>
             </div>
-            <div  className="p-6 ">
-             <img src={image} className="w-[500px] " />
-             </div>
+          
         </div>
          </div>
         )

@@ -7,15 +7,34 @@ import Navbar from './compenents/navbar';
 import Hero from './compenents/hero';
 import About from './compenents/about';
 import Serice from './compenents/service';
+import gsap from 'gsap';
+import{ ScrollTrigger} from "gsap/ScrollTrigger"
+import ScrollSmoother from 'gsap/ScrollSmoother';
+import { useEffect } from 'react';
+gsap.registerPlugin(ScrollTrigger,ScrollSmoother)
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
+  
   <React.StrictMode>
-   <div className='font-serif bg-gray-50/60'>
-    <Navbar/>
+   <div className='font-serif '>
+    <div className="min-h-screen w-full relative">
+  {/* Radial Gradient Background from Bottom */}
+  <div
+    className="absolute inset-0 z-0"
+    style={{
+      background: "radial-gradient(125% 125% at 50% 90%, #fff 40%, #475569 100%)",
+    }}
+  />
+  <div className=' relative z-10'>
+ <Navbar/>
      <Hero/>
       <About/>
       <Serice/>
+      </div>
+</div>
+    
       
       </div>
   </React.StrictMode>
