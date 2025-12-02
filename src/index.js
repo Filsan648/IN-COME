@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Home from './Page/Home';
+import Service from './Compement/service';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div className=" bg-slate-100" >
+         <div className=' p-7  '>
+    <Home />
+    
+         </div>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
