@@ -7,8 +7,8 @@ import Home from './Page/Home';
 import Service from './Compement/service';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div className=" bg-slate-100" >
-         <div className=' p-7  '>
+  <div className=" bg-slate-100   " >
+         <div className='  '>
     <Home />
     
          </div>

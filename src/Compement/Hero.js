@@ -1,106 +1,63 @@
-import image1 from "../assets/php.jpg";
-import image2 from "../assets/1734513502507.jpg";
+import image1 from "../assets/Hero/image.png";
+import image from "../assets/Hero/image1.png";
 import fleche from "../assets/ICONE/fleche.png";
-import image3 from "../assets/Capture d’écran 2025-11-30 121140.png";
+import video from "../assets/video/ssstik.io_@cabinet_incom_1764743664878.mp4"
+import video1 from "../assets/video/ssstik.io_1764743470436.mp4"
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <div className="relative flex gap-12  mt-14 px-20">
+    <div className="relative flex items-center justify-between gap-12 p-10 m-2  mt-8 rounded-3xl ">
 
-      
-      <div className="absolute left-0 top-20 w-[420px] h-[420px] bg-yellow-300/20 blur-3xl rounded-full -z-10"></div>
+  <div className=" space-y-6 ">
+<p className=" px-2 w-max bg-black/90 backdrop-blur rounded-3xl text-white text-sm tracking-widest  shadow-lg">
+  360° Creative Powerhouse
+</p>
+    <h1 className="text-5xl lg:w-3/4 font-serif md:text-6xl font-extralight pb-12 leading-tight tracking-tight">
+<span className="text-yellow-400">In </span>Spired Partenership  <span className="text-yellow-400">In </span>'Credible Result    </h1>
+<div className="mt-6 flex items-center gap-6">
+</div>
+  <div className="flex justify-center items-center  mt-12">
+    <div className=" hidden md:block   relative -rotate-6 w-[450px] h-[500px] object-cover rounded-[40px] shadow-xl bg-yellow-600 hover:rotate-0 duration-700 hover:w-[450px] hover:h-[470px]  " >
+<h1 className=" p-2 absolute top-2 text-8xl font-medium" > 5+</h1>
+<p className="absolute bottom-4 text-4xl p-4  after:content-[''] after:block after:w-full after:h-[3px]
+     after:bg-black after:mt-2">Annee d'experience</p>
+</div> 
 
-      <div className="w-2/4 flex flex-col pt-4">
-
-     
-        <div className="px-4 py-1 mb-4 rounded-full bg-black text-white text-sm tracking-wide w-fit shadow-md">
-          Agence créative 360°
-        </div>
-
-     
-        <h1 className="text-6xl font-bold leading-tight text-black">
-          Un seul partenaire pour toutes vos solutions en communication.
-        </h1>
+    <video  autoPlay
+      muted
+      loop
+      playsInline  className=" w-[300px] h-[350px]  -rotate-12 md:w-[450px] md:h-[500px] object-cover rounded-[40px] shadow-xl hover:rotate-0 duration-700 hover:w-[450px] hover:h-[470px]  ">
+              <source src={video} type="video/mp4" />
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
 
 
-        <p className="text-black/60 mt-6 text-lg leading-relaxed">
-          Avec in’COM, vous entrez dans un écosystème créatif intégré qui réunit
-          design, impression, audiovisuel, digital, événementiel, influence et
-          conseil stratégique. De l’idée à la réalisation, nous offrons des solutions
-          360°, 100% in-house.
-        </p>
+<div className=" hidden md:block relative rotate-12 w-[450px] h-[500px] object-cover rounded-[40px] shadow-xl bg-slate-500 hover:rotate-0 duration-700 hover:w-[450px]  " >
+<h1 className=" p-2 absolute top-2 text-8xl font-medium" > 20+</h1>
+<p className="absolute bottom-4 text-4xl p-4  after:content-[''] after:block after:w-full after:h-[3px]
+     after:bg-black after:mt-2">Client accompagnee</p>
 
 
-        <div className="mt-6">
-          <div className="flex items-center justify-between w-44 h-11 px-5 rounded-full bg-black text-white transition-all duration-500 hover:bg-neutral-900 hover:px-6 cursor-pointer group shadow-lg">
-            <span className="text-lg font-medium tracking-wide">Get in touch</span>
-            <img
-              src={fleche}
-              className="w-5 transition-transform duration-500 group-hover:translate-x-1 group-hover:scale-110 filter brightness-0 invert"
-            />
-          </div>
-        </div>
+</div>
 
-  
-        <div className="mt-10 space-y-6">
+ <video  autoPlay
+      muted
+      loop
+      playsInline  className=" hidden md:block -rotate-12 w-[450px] h-[500px] object-cover rounded-[40px] shadow-xl hover:rotate-0 duration-700 hover:w-[450px] hover:h-[470px]  ">
+              <source src={video1} type="video/mp4" />
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
 
-          <div className="flex items-center gap-4">
-            <button className="service-btn">Design</button>
-            <div className="plus-circle">+</div>
-            <button className="service-btn">Event</button>
-            <div className="plus-circle">+</div>
-            <button className="service-btn">Print</button>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <div className="plus-circle">+</div>
-            <button className="service-btn">Connect</button>
-            <div className="plus-circle">+</div>
-            <button className="service-btn">Podcast</button>
-          </div>
 
         </div>
-
-    
-        <div className="flex gap-12 mt-12">
-          <div>
-            <p className="text-4xl font-bold">12+</p>
-            <p className="text-black/50 text-sm">Années d'expérience</p>
-          </div>
-          <div>
-            <p className="text-4xl font-bold">300+</p>
-            <p className="text-black/50 text-sm">Clients accompagnés</p>
-          </div>
-          <div>
-            <p className="text-4xl font-bold">600+</p>
-            <p className="text-black/50 text-sm">Projets réalisés</p>
-          </div>
-        </div>
-
-      
-
-      </div>
+  </div>
 
 
-      <div className="w-1/4 pt-11">
-        <img
-          src={image1}
-          className="h-full w-full object-cover rounded-xl shadow-xl transition-transform duration-500 "
-        />
-      </div>
 
-      <div className="flex flex-col gap-10 w-1/4">
-        <img
-          src={image2}
-          className="w-full h-48 rounded-xl object-cover shadow-xl transition-transform duration-500 "
-        />
-        <img
-          src={image3}
-          className="w-full h-64 rounded-xl object-cover shadow-lg transition-transform duration-500 "
-        />
-      </div>
 
-    </div>
+</div>
+
   );
 }
 

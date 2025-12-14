@@ -9,15 +9,15 @@ import yasmin from "../assets/Team/yasmin.png";
 import fleche from "../assets/ICONE/fleche.png";
 
 const Team_tab = [
-    { Name:"" , fonction: "", image: ""  },
-  { Name: "Amina Houmed", fonction: "Cofondatrice & CEO", image: Amina },
-  { Name: "Mohamed Gohar", fonction: "Cofondateur & COO", image: Mohamed },
-  { Name: "Yasmine Said Bachir", fonction: "Chief Marketing Manager", image: yasmin },
-  { Name: "Abdallah Adou", fonction: "Ingénieur Audiovisuel & Technique", image: abdallah },
-  { Name: "Abdisamad Jama", fonction: "Creative Graphic Designer", image: Abdisamad },
-  { Name: "Mohamed Badri", fonction: "Videographer & Motion Creator", image: Abdisamad },
-  { Name: "Said Mohamud Ali", fonction: "Videographer & Storytelling Artist", image: said },
-  { Name: "Farhan Mohamed", fonction: "Creative Photographer", image: Farhan },
+   
+    { Name: "Amina Houmed", fonction: "Cofondatrice & CEO", image: Amina },
+    { Name: "Mohamed Gohar", fonction: "Cofondateur & COO", image: Mohamed },
+    { Name: "Yasmine Said Bachir", fonction: "Chief Marketing Manager", image: yasmin },
+    { Name: "Abdallah Adou", fonction: "Ingénieur Audiovisuel & Technique", image: abdallah },
+    { Name: "Abdisamad Jama", fonction: "Creative Graphic Designer", image: Abdisamad },
+    { Name: "Mohamed Badri", fonction: "Videographer & Motion Creator", image: Abdisamad },
+    { Name: "Said Mohamud Ali", fonction: "Videographer & Storytelling Artist", image: said },
+    { Name: "Farhan Mohamed", fonction: "Creative Photographer", image: Farhan },
 ];
 
 function Team() {
@@ -32,36 +32,46 @@ function Team() {
   };
 
   return (
-    <div className="relative w-full mx-auto mt-28">
+    <div className="relative w-full mx-auto ">
+ <h2 className="p-10 text-5xl md:text-6xl lg:text-7xl font-serif font-extralight leading-tight tracking-tight w-2/3">
+          Un <span className="text-yellow-400">équipe</span>  un seul
+          <span className="text-yellow-400">  brief</span>, une exigence continue
+        </h2>
 
-<div className="inline-flex items-center gap-2  ">
-  <div className="w-3 h-3 bg-yellow-400 rounded-full "></div>
-  <h2 className="text-5xl font-bold tracking-tight">
-    <span className="text-black ">In’</span>
-    <span className="text-yellow-500 ">Team</span>
-  </h2>
-</div>
-  <p className="text-black/60 pt-3 " >
-  Une équipe, un seul brief, une exigence continue.  </p>
+   
 
-      {/* Slider Container */}
-      <div className=" mt-20 overflow-hidden ">
+    
+      <div className="  overflow-hidden ">
         <div
-          className="flex gap-10 transition-transform duration-700"
-          style={{ transform: `translateX(-${index * 350}px)` }} // largeur d’une carte
+          className="flex gap-10 transition-transform duration-700 "
+          style={{ transform: `translateX(-${index * 400}px)` }} // largeur d’une carte
         >
           {Team_tab.map((team, i) => {
              const isCenter =i === index+1 ; 
 
-          return(<div key={i} className="w-[330px] shrink-0">
-              <img
-                src={team.image}
-                className= {` w-[330px] h-[420px]  transition duration-700 rounded-[50px] object-cover shadow-lg  ${isCenter ? "scale-100 opacity-100 grayscale-0 " : "scale-75 opacity-50 grayscale  "} `}
-              />
+          return(<div key={i} className="w-[500px] h-screen relative group shrink-0 overflow-hidden rounded-[50px] shadow-lg">
+  <img
+    src={team.image}
+    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+    alt={team.Name}
+  />
 
-              <h3 className="text-xl font-bold mt-4 text-center">{team.Name}</h3>
-              <p className="text-sm text-gray-500 text-center">{team.fonction}</p>
-            </div>)
+  <div className="
+    absolute inset-0
+    bg-black/40
+    flex flex-col justify-center items-center
+    text-white
+    text-center
+    px-6 py-4
+    opacity-0
+    transition-opacity duration-500
+    group-hover:opacity-100
+  ">
+    <h3 className="text-2xl font-bold mb-2">{team.Name}</h3>
+    <p className="text-sm">{team.fonction}</p>
+  </div>
+</div>
+)
           }
             
         )}
