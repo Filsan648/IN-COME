@@ -32,15 +32,14 @@ function Team() {
   };
 
   return (
-    <div className="relative w-full mx-auto ">
- <h2 className="p-10 text-5xl md:text-6xl lg:text-7xl font-serif font-extralight leading-tight tracking-tight w-2/3">
+    <div className="relative w-full p-10  rounded-t-3xl mx-auto   ">
+ <h2 className=" text-5xl pb-8 md:text-6xl lg:text-7xl font-serif font-extralight leading-tight tracking-tight w-2/3">
           Un <span className="text-yellow-400">équipe</span>  un seul
           <span className="text-yellow-400">  brief</span>, une exigence continue
         </h2>
 
    
 
-    
       <div className="  overflow-hidden ">
         <div
           className="flex gap-10 transition-transform duration-700 "
@@ -59,16 +58,16 @@ function Team() {
   <div className="
     absolute inset-0
     bg-black/40
-    flex flex-col justify-center items-center
+    flex flex-col 
     text-white
-    text-center
+   
     px-6 py-4
-    opacity-0
+
     transition-opacity duration-500
-    group-hover:opacity-100
+  
   ">
-    <h3 className="text-2xl font-bold mb-2">{team.Name}</h3>
-    <p className="text-sm">{team.fonction}</p>
+    <h3 className="text-sm font-bold mb-2 pt-5">{team.fonction} </h3>
+    <p className="text-3xl">  {team.Name}</p>
   </div>
 </div>
 )

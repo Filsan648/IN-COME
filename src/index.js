@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from './Page/Home';
-import Service from './Compement/service';
+import Cursor from './Compement/asset/cursor_global';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div className=" bg-slate-100   " >
-         <div className='  '>
+  <div className=" bg-slate-100 text-black   " >
+     <Cursor />
+
+         <div className='scroll-smooth  '>
     <Home />
     
          </div>
