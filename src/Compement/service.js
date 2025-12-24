@@ -19,7 +19,21 @@ const [description, setdescription] = useState("")
    ${active === id ? "scale-105 z-10" : ""}`
 
 return (
-  <div className=" p-10   ">
+<div className="min-h-screen w-full relative">
+  {/* Aurora Dream Soft Harmony */}
+  <div
+    className="absolute inset-0 z-0"
+    style={{
+      background: `
+       radial-gradient(ellipse 80% 60% at 60% 20%, rgba(175, 109, 255, 0.50), transparent 65%),
+        radial-gradient(ellipse 70% 60% at 20% 80%, rgba(255, 100, 180, 0.45), transparent 65%),
+        radial-gradient(ellipse 60% 50% at 60% 65%, rgba(255, 235, 170, 0.43), transparent 62%),
+        radial-gradient(ellipse 65% 40% at 50% 60%, rgba(120, 190, 255, 0.48), transparent 68%),
+        linear-gradient(180deg, #f7eaff 0%, #fde2ea 100%)
+      `,
+    }}
+  />
+  <div className=" relative z-50 p-10   ">
     <h1 className="text-5xl w-full md:w-3/4 font-serif md:text-6xl font-extralight pb-12 leading-tight tracking-tight">
 Des solutions  
 <span className="text-yellow-400"> créatives </span> pour faire grandir votre  <span className="text-yellow-400">marque </span> </h1>
@@ -130,6 +144,8 @@ Des solutions
 
 
 </div>
+</div>
+
 )
 }
 export default Service

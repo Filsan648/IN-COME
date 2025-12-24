@@ -14,6 +14,8 @@ export default function About1() {
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
       >
+        <p className="text-yellow-400">
+        À propos</p>
         <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-extralight leading-tight tracking-tight">
           Un <span className="text-yellow-400">seul</span> partenaire pour toutes vos
           solutions en <span className="text-yellow-400">communication.</span>

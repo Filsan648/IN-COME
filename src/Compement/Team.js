@@ -32,7 +32,7 @@ function Team() {
   };
 
   return (
-    <div className="relative w-full p-10  rounded-t-3xl mx-auto   ">
+    <div className="relative w-full p-10 rounded-b-3xl rounded-t-3xl mx-auto bg-white text-black  ">
  <h2 className=" text-5xl pb-8 md:text-6xl lg:text-7xl font-serif font-extralight leading-tight tracking-tight w-2/3">
           Un <span className="text-yellow-400">équipe</span>  un seul
           <span className="text-yellow-400">  brief</span>, une exigence continue
